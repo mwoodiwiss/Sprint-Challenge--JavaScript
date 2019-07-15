@@ -122,7 +122,7 @@ console.log(uni);
 
 zooAnimals = [{ "animal_name": "Jackal, asiatic", "population": 5, "scientific_name": "Canis aureus", "state": "Kentucky" },
 { "animal_name": "Screamer, southern", "population": 1, "scientific_name": "Chauna torquata", "state": "Alabama" },
-{ "scientific name": "White spoonbill", "population": 8, "scientific_name": "Platalea leucordia", "state": "Georgia" },
+{ "animal_name": "White spoonbill", "population": 8, "scientific_name": "Platalea leucordia", "state": "Georgia" },
 { "animal_name": "White-cheeked pintail", "population": 1, "scientific_name": "Anas bahamensis", "state": "Oregon" },
 { "animal_name": "Black-backed jackal", "population": 2, "scientific_name": "Canis mesomelas", "state": "Washington" },
 { "animal_name": "Brolga crane", "population": 9, "scientific_name": "Grus rubicundus", "state": "New Mexico" },
@@ -143,12 +143,11 @@ console.log(animalNames);
 /* Request 2: .map()    
 
 The zoos need a list of all their animal's names (names only, not scientific) converted to lower case.  Create a new array named lowerCase and map over each name to convert them all to lower case.  Log the resut.
-runners.map(name => name.first_name.toUpperCase());
+zooAnimals.map(name => name.animal_name.toLowerCase());
 */
 
-// const lowerCase = [];
-// zooAnimals.map(lowerCaseName => lowerCaseName.animal_name.toUpperCase());
-// console.log(lowerCase);
+let lowerCase = zooAnimals.map(name => name.animal_name.toLowerCase());
+console.log(lowerCase); 
 
 /* Request 3: .filter() 
 
